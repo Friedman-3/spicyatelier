@@ -53,7 +53,7 @@ const Footer = () => {
                 <Instagram size={20} />
               </motion.a>
               <motion.a
-                href="https://facebook.com"
+                href="https://facebook.coms"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-200 hover:text-neutral-300"
