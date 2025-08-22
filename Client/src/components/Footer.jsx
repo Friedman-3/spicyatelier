@@ -1,6 +1,6 @@
-import React from 'react';
-import { Mail, Instagram, Facebook, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Facebook, Instagram, Mail } from 'lucide-react';
+import React from 'react';
 
 const Footer = () => {
   const footerVariants = {
@@ -29,17 +29,22 @@ const Footer = () => {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mt-auto"
-      style={{ backgroundColor: '#845334' }}
+      className="mt-auto bg-spicy-red text-white"
     >
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <motion.div variants={textVariants} className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif italic">
+            El toque picante que tu marca necesita <br /> está a un mensaje de distancia. 🌶️
+          </h2>
+        </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand Column */}
           <motion.div variants={textVariants} className="space-y-4">
             <motion.h3 variants={textVariants} className="text-xl font-light tracking-widest uppercase text-white">
               ALY ANDRY
             </motion.h3>
-            <motion.p variants={textVariants} className="text-sm text-neutral-200 leading-relaxed max-w-xs">
+            <motion.p variants={textVariants} className="text-sm text-white leading-relaxed max-w-xs">
               TEXTOOO.
             </motion.p>
             <motion.div variants={iconVariants} className="flex space-x-4 pt-2">
@@ -47,7 +52,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-200 hover:text-neutral-300"
+                className="text-white hover:text-neutral-200"
                 variants={iconVariants}
               >
                 <Instagram size={20} />
@@ -56,7 +61,7 @@ const Footer = () => {
                 href="https://facebook.coms"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-200 hover:text-neutral-300"
+                className="text-white hover:text-neutral-200"
                 variants={iconVariants}
               >
                 <Facebook size={20} />
@@ -67,27 +72,27 @@ const Footer = () => {
 
           {/* Links Column */}
           <motion.div variants={textVariants} className="space-y-4">
-            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-neutral-200">
+            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-white">
               Navegación
             </motion.h4>
             <div className="space-y-2">
               <motion.a
                 href="/"
-                className="block text-sm text-neutral-200 hover:text-neutral-300"
+                className="block text-sm text-white hover:text-neutral-200"
                 variants={linkVariants}
               >
                 Inicio
               </motion.a>
               <motion.a
                 href="/collection"
-                className="block text-sm text-neutral-200 hover:text-neutral-300"
+                className="block text-sm text-white hover:text-neutral-200"
                 variants={linkVariants}
               >
                 Colección
               </motion.a>
               <motion.a
                 href="/about-us"
-                className="block text-sm text-neutral-200 hover:text-neutral-300"
+                className="block text-sm text-white hover:text-neutral-200"
                 variants={linkVariants}
               >
                 Nosotros
@@ -98,33 +103,24 @@ const Footer = () => {
 
           {/* Contact Column */}
           <motion.div variants={textVariants} className="space-y-4">
-            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-neutral-200">
+            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-white">
               Contacto
             </motion.h4>
             <div className="space-y-2">
               <motion.a
-                href="mailto:alycisneros66@gmail.com"
-                className="flex items-center text-sm text-neutral-200 hover:text-neutral-300"
+                href="mailto:ATELIERSPICY@GMAIL.COM"
+                className="flex items-center text-sm text-white hover:text-neutral-200"
                 variants={linkVariants}
               >
                 <Mail size={16} className="mr-2" />
-                alycisneros66@gmail.com
+                ATELIERSPICY@GMAIL.COM
               </motion.a>
-              <motion.a
-                href="tel:+34663323018"
-                className="flex items-center text-sm text-neutral-200 hover:text-neutral-300"
-                variants={linkVariants}
-              >
-                <Phone size={16} className="mr-2" />
-                +34 663 32 30 18
-              </motion.a>
-              {/* Puedes agregar información de contacto adicional aquí, como un teléfono */}
             </div>
           </motion.div>
         </div>
 
-        <motion.div variants={textVariants} className="border-t border-neutral-300 mt-10 pt-6 text-center text-xs text-neutral-200">
-          <p>© {new Date().getFullYear()} ALY ANDRY. Todos los derechos reservados.</p>
+        <motion.div variants={textVariants} className="border-t border-neutral-300 mt-10 pt-6 text-center text-xs text-white">
+          <p> {new Date().getFullYear()} ALY ANDRY. Todos los derechos reservados.</p>
         </motion.div>
       </div>
     </motion.footer>
