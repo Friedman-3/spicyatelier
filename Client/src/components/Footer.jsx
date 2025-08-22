@@ -29,7 +29,7 @@ const Footer = () => {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mt-auto bg-spicy-red text-white"
+      className="mt-auto bg-red-900 text-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div variants={textVariants} className="text-center mb-12">
@@ -44,7 +44,7 @@ const Footer = () => {
             <motion.h3 variants={textVariants} className="text-xl font-light tracking-widest uppercase text-white">
               ALY ANDRY
             </motion.h3>
-            <motion.p variants={textVariants} className="text-sm text-white leading-relaxed max-w-xs">
+            <motion.p variants={textVariants} className="text-sm text-neutral-200 leading-relaxed max-w-xs">
               TEXTOOO.
             </motion.p>
             <motion.div variants={iconVariants} className="flex space-x-4 pt-2">
@@ -52,7 +52,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-neutral-200"
+                className="text-neutral-200 hover:text-neutral-300"
                 variants={iconVariants}
               >
                 <Instagram size={20} />
@@ -61,7 +61,7 @@ const Footer = () => {
                 href="https://facebook.coms"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-neutral-200"
+                className="text-neutral-200 hover:text-neutral-300"
                 variants={iconVariants}
               >
                 <Facebook size={20} />
@@ -72,27 +72,27 @@ const Footer = () => {
 
           {/* Links Column */}
           <motion.div variants={textVariants} className="space-y-4">
-            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-white">
+            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-neutral-200">
               Navegación
             </motion.h4>
             <div className="space-y-2">
               <motion.a
                 href="/"
-                className="block text-sm text-white hover:text-neutral-200"
+                className="block text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
                 Inicio
               </motion.a>
               <motion.a
                 href="/collection"
-                className="block text-sm text-white hover:text-neutral-200"
+                className="block text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
                 Colección
               </motion.a>
               <motion.a
                 href="/about-us"
-                className="block text-sm text-white hover:text-neutral-200"
+                className="block text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
                 Nosotros
@@ -103,13 +103,13 @@ const Footer = () => {
 
           {/* Contact Column */}
           <motion.div variants={textVariants} className="space-y-4">
-            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-white">
+            <motion.h4 variants={textVariants} className="text-sm font-medium uppercase tracking-wide text-neutral-200">
               Contacto
             </motion.h4>
             <div className="space-y-2">
               <motion.a
                 href="mailto:ATELIERSPICY@GMAIL.COM"
-                className="flex items-center text-sm text-white hover:text-neutral-200"
+                className="flex items-center text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
                 <Mail size={16} className="mr-2" />
@@ -119,7 +119,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <motion.div variants={textVariants} className="border-t border-neutral-300 mt-10 pt-6 text-center text-xs text-white">
+        <motion.div variants={textVariants} className="border-t border-neutral-300 mt-10 pt-6 text-center text-xs text-neutral-200">
           <p> {new Date().getFullYear()} ALY ANDRY. Todos los derechos reservados.</p>
         </motion.div>
       </div>

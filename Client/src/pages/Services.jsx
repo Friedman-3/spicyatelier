@@ -1,6 +1,6 @@
 import BrandIdentity from '../components/Services/BrandIdentity';
 import ContentCreation from '../components/Services/ContentCreation';
-import ReelsTikToks from '../components/Services/ReelsTiktoks';
+import Reels from '../components/Services/Reels';
 import Servicess from '../components/Services/Servicess';
 import SocialMediaStrategy from '../components/Services/SocialMediaStrategy';
 
@@ -11,7 +11,7 @@ const Services = () => {
       <ContentCreation />
       <SocialMediaStrategy />
       <BrandIdentity />
-      <ReelsTikToks />
+      <Reels />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReelsTiktoks = () => {
+const Reels = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-red-900 via-red-800 to-red-900 relative overflow-hidden">
       {/* Elementos decorativos de fondo */}
@@ -253,4 +253,4 @@ const ReelsTiktoks = () => {
   );
 };
 
-export default ReelsTiktoks;
+export default Reels;
