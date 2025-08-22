@@ -3,6 +3,20 @@ import React from 'react';
 const BrandIdentity = () => {
   return (
     <section className="min-h-screen bg-gradient-to-br from-red-900 via-red-800 to-red-900 relative overflow-hidden">
+      {/* Imagen de fondo */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/src/assets/images/Content/BrandIdentityBackground.webp)'
+        }}
+      ></div>
+
+      {/* Overlay de color */}
+      <div 
+        className="absolute inset-0 opacity-80"
+        style={{ backgroundColor: '#641424' }}
+      ></div>
+      
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0">
         {/* Letras del alfabeto decorativas */}

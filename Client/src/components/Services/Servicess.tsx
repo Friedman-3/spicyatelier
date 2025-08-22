@@ -7,7 +7,7 @@ const Servicess = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+          backgroundImage: 'url(/src/assets/images/Content/ServiceBackground.webp)'
         }}
       ></div>
       
@@ -46,7 +46,7 @@ const Servicess = () => {
           {/* Contenido principal */}
           <div className="space-y-8">
             <div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight helvetica-regular">
                 SERVICIOS
                 <br />
                 <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">

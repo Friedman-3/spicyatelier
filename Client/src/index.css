@@ -8,6 +8,8 @@ body {
   background-color: #ffffff;
 }
 
+/* ========== TIPOGRAFÍAS EXISTENTES ========== */
+
 /* Clase para la fuente Gowun Dodum */
 .gowun-dodum-regular {
   font-family: "Gowun Dodum", sans-serif;
@@ -41,6 +43,147 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/* ========== NUEVAS TIPOGRAFÍAS ========== */
+
+/* Roboto - Todas las variaciones */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Roboto Italic */
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Helvetica - usando fallbacks del sistema */
+.helvetica-regular {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.helvetica-light {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.helvetica-bold {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Ariata Display (usando Arima como alternativa) */
+.ariata-display-regular {
+  font-family: "Arima", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ariata-display-light {
+  font-family: "Arima", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ariata-display-bold {
+  font-family: "Arima", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Acumin Variable Concept (usando Source Sans Pro como alternativa) */
+.acumin-variable-regular {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.acumin-variable-light {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.acumin-variable-bold {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.acumin-variable-black {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* ========== ESTILOS EXISTENTES ========== */
 
 /* Masonry grid styles */
 .my-masonry-grid {
