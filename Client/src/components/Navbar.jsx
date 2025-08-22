@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/8 backdrop-blur-md shadow-sm border-b border-gray-10">
+    <header className="fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20 py-6">
           {/* Logo izquierdo */}
           <div className="flex justify-start">
             <Link to="/" className="block">
-              <h1 className="text-2xl font-extrabold uppercase tracking-widest text-black">
+              <h1 className="text-2xl font-extrabold uppercase tracking-widest text-white">
                 LOGO
               </h1>
             </Link>
@@ -26,10 +26,10 @@ const Navbar = () => {
                         ? "/"
                         : "/" + item.toLowerCase().replace(/\s+/g, "-")
                     }
-                    className="relative text-sm font-semibold uppercase tracking-wider text-black hover:text-gray-700 transition-colors duration-300 group"
+                    className="relative text-sm font-medium uppercase tracking-wider text-white hover:text-white/80 transition-colors duration-300 group"
                   >
                     {item}
-                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}
