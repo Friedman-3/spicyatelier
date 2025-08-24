@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import chileVainillaImage from '../assets/images/Content/ChileVainilla.png';
 
 const Navbar = () => {
   return (
@@ -9,9 +10,7 @@ const Navbar = () => {
           {/* Logo izquierdo */}
           <div className="flex justify-start">
             <Link to="/" className="block">
-              <h1 className="text-2xl font-extrabold uppercase tracking-widest text-white">
-                LOGO
-              </h1>
+              <img src={chileVainillaImage} alt="Spicy Atelier Logo" className="h-20" />
             </Link>
           </div>
 

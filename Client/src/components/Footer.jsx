@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Facebook, Instagram, Mail } from 'lucide-react';
 import React from 'react';
+import chileVainillaImage from '../assets/images/Content/ChileVainilla.png';
 
 const Footer = () => {
   const footerVariants = {
@@ -29,12 +30,14 @@ const Footer = () => {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="w-full bg-red-900 text-white"
+      className="w-full bg-[#641126] text-white"
+
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div variants={textVariants} className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif italic">
-            El toque picante que tu marca necesita <br /> está a un mensaje de distancia. 🌶️
+            El toque picante que tu marca necesita <br /> está a un mensaje de distancia.
+            <img src={chileVainillaImage} alt="Chile" className="inline-block h-15 w-auto ml-2 align-middle" />
           </h2>
         </motion.div>
 
@@ -81,21 +84,28 @@ const Footer = () => {
                 className="block text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
-                Inicio
+                Home
               </motion.a>
               <motion.a
-                href="/collection"
+                href="/works"
                 className="block text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
-                Colección
+                Works
               </motion.a>
               <motion.a
-                href="/about-us"
+                href="/who-we-are"
                 className="block text-sm text-neutral-200 hover:text-neutral-300"
                 variants={linkVariants}
               >
-                Nosotros
+                Who we are
+              </motion.a>
+              <motion.a
+                href="/services"
+                className="block text-sm text-neutral-200 hover:text-neutral-300"
+                variants={linkVariants}
+              >
+                Services
               </motion.a>
               {/* Puedes agregar más enlaces de navegación aquí */}
             </div>

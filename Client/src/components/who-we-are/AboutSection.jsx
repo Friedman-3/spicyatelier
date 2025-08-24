@@ -7,8 +7,8 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         {/* Left Column: Story */}
         <div className="font-serif">
-          <h2 className="text-4xl font-bold text-red-900 mb-2">¿QUIÉNES</h2>
-          <h2 className="text-4xl font-bold text-red-900 mb-9">SOMOS?</h2>
+          <h2 className="w-full bg-[#641126] text-white">¿QUIÉNES</h2>
+          <h2 className="w-full bg-[#641126] text-white">SOMOS?</h2>
           <p className="text-gray-700 mb-4">
             Hola, somos Aly y Fernanda - dos creativas que unieron caminos en Barcelona mientras estudiábamos un Máster en marketing de Moda. Aly es boliviana, Fernanda es peruana, y desde que nos conocimos descubrimos que juntas hacemos el match perfecto entre estrategia, creatividad y una estética que realmente conecta.
           </p>

@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
-/* Estilos base */
+/* ========== FUENTE PERSONALIZADA ARIATA ========== */
+@font-face {
+  font-family: "Ariata Display";
+  src: url('./src/assets/Fonts/ariata_display_black-webfont.woff2?v=2.0') format('woff2');
+  font-weight: 900; /* Black weight = 900, no 400 */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========== ESTILOS BASE ========== */
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   background-color: #ffffff;
+  font-family: "Roboto", sans-serif; /* Cambiado a Roboto para texto normal */
 }
 
 /* ========== TIPOGRAFÍAS EXISTENTES ========== */
@@ -45,6 +55,13 @@ body {
 }
 
 /* ========== NUEVAS TIPOGRAFÍAS ========== */
+
+/* Clase para la fuente Ariata Display personalizada */
+.ariata-display-black {
+  font-family: "Ariata Display", sans-serif, serif !important;
+  font-weight: 900; /* Black weight */
+  font-style: normal;
+}
 
 /* Roboto - Todas las variaciones */
 .roboto-thin {

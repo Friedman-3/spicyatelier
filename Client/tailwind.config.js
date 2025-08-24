@@ -17,8 +17,8 @@ export default {
         // Nuevas fuentes agregadas
         'roboto': ['"Roboto"', 'sans-serif'],
         'helvetica': ['"Helvetica Neue"', '"Helvetica"', '"Arial"', 'sans-serif'],
-        'ariata': ['"Arima"', 'cursive'], // Alternativa para Ariata Display
-        'acumin': ['"Source Sans Pro"', 'sans-serif'], // Alternativa para Acumin Variable
+        'ariata': ['"AriataDisplay"', 'sans-serif'], // Sin espacio
+        'acumin': ['"Source Sans Pro"', 'sans-serif'],
       },
     },
   },
