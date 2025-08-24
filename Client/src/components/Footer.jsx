@@ -29,7 +29,7 @@ const Footer = () => {
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="mt-auto bg-red-900 text-white"
+      className="w-full bg-red-900 text-white"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div variants={textVariants} className="text-center mb-12">
