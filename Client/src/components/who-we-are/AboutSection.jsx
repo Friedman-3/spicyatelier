@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutUsImage from '../../assets/images_spicy/about_section.png';
 
 const AboutSection = () => {
   return (
@@ -6,7 +7,8 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         {/* Left Column: Story */}
         <div className="font-serif">
-          <h2 className="text-4xl font-bold text-red-900 mb-6">¿QUIÉNES SOMOS?</h2>
+          <h2 className="text-4xl font-bold text-red-900 mb-2">¿QUIÉNES</h2>
+          <h2 className="text-4xl font-bold text-red-900 mb-9">SOMOS?</h2>
           <p className="text-gray-700 mb-4">
             Hola, somos Aly y Fernanda - dos creativas que unieron caminos en Barcelona mientras estudiábamos un Máster en marketing de Moda. Aly es boliviana, Fernanda es peruana, y desde que nos conocimos descubrimos que juntas hacemos el match perfecto entre estrategia, creatividad y una estética que realmente conecta.
           </p>
@@ -21,7 +23,7 @@ const AboutSection = () => {
         {/* Right Column: Image, Mission, Vision */}
         <div>
           <div className="bg-gray-200 w-full h-80 mb-8 flex items-center justify-center">
-            <span className="text-gray-500">Image Placeholder</span>
+            <img src={aboutUsImage} alt="About Us" />
           </div>
           <div className="border-t border-b border-gray-300 py-4">
             <h3 className="text-xl font-bold text-red-900 mb-2">Misión:</h3>
