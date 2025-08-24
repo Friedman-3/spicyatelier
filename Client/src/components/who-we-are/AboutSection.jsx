@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutUsImage from '../../assets/images_spicy/about_section.png';
+import aboutUsImage from '../../assets/images/Content/CreativeCollaborationHub.webp';
 
 const AboutSection = () => {
   return (

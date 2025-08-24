@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../assets/images_spicy/hero_section.png';
+import heroImage from '../../assets/images/Content/ChiliPepperElegance.webp';
 
 const HeroSection = () => {
   return (
