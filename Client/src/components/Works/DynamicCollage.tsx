@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
+import ImageCarousel from "./ImageCarrousel";
 // Importar todas las imágenes
 // Formación 2, 1, 2 (5 imágenes)
 import collage1_0 from "../../assets/images/Content/Collage1_0.webp";
@@ -30,6 +31,9 @@ import collage17_0 from "../../assets/images/Content/Collage5_3.webp";
 
 const DynamicCollage = ({ collageType = "collage1" }) => {
   const ref = useRef(null);
+  const [isCarouselOpen, setIsCarouselOpen] = useState(false);
+  const [carouselStartIndex, setCarouselStartIndex] = useState(0);
+
   const isInView = useInView(ref, {
     once: true, // Solo anima una vez
     margin: "10px", // Empieza la animación 100px antes de que sea visible
@@ -179,4 +183,4 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
   );
 };
 
-export default DynamicCollage;
+export default DynamicCollage;  
