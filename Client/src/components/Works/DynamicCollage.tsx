@@ -52,7 +52,7 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
         { src: collage4_0, alt: "Collage 1 - Image 4" },
         { src: collage5_0, alt: "Collage 1 - Image 5" },
       ],
-      containerClass: "w-screen h-screen grid grid-cols-3 grid-rows-2",
+      containerClass: "w-full h-screen grid grid-cols-3 grid-rows-2",
       layout: [
         { imageIndex: 0, className: "object-cover w-full h-full " }, // Col 1, Row 1
         { imageIndex: 2, className: "object-cover w-full h-full row-span-2 " }, // Col 2, Both rows
@@ -70,7 +70,7 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
         { src: collage8_0, alt: "Collage 2 - Image 3" },
         { src: collage9_0, alt: "Collage 2 - Image 4" },
       ],
-      containerClass: "w-screen h-screen grid grid-cols-3 grid-rows-2",
+      containerClass: "w-full h-screen grid grid-cols-3 grid-rows-2",
       layout: [
         { imageIndex: 0, className: "object-cover w-full h-full  row-span-2" }, // Col 1, Both rows
         { imageIndex: 1, className: "object-cover w-full h-full " }, // Col 2, Row 1
@@ -86,7 +86,7 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
         { src: collage11_0, alt: "Collage 3 - Image 2" },
         { src: collage12_0, alt: "Collage 3 - Image 3" },
       ],
-      containerClass: "w-screen h-screen grid grid-cols-2 grid-rows-2",
+      containerClass: "w-full h-screen grid grid-cols-2 grid-rows-2",
       layout: [
         { imageIndex: 0, className: "object-cover w-full h-full " }, // Col 1, Row 1
         { imageIndex: 2, className: "object-cover w-full h-full  row-span-2" }, // Col 2, Both rows
@@ -97,7 +97,7 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
     // Formación 1 - Layout: 1 imagen ocupando toda la pantalla
     collage4: {
       images: [{ src: collage13_0, alt: "Collage 4 - Single Image" }],
-      containerClass: "w-screen h-screen flex items-center justify-center",
+      containerClass: "w-full h-screen flex items-center justify-center",
       layout: [{ imageIndex: 0, className: "object-cover w-full h-full " }],
     },
 
@@ -109,7 +109,7 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
         { src: collage16_0, alt: "Collage 5 - Image 3" },
         { src: collage17_0, alt: "Collage 5 - Image 4" },
       ],
-      containerClass: "w-screen h-screen grid grid-cols-3 grid-rows-2",
+      containerClass: "w-full h-screen grid grid-cols-3 grid-rows-2",
       layout: [
         { imageIndex: 0, className: "object-cover w-full h-full  row-span-2" }, // Col 1, Both rows
         { imageIndex: 1, className: "object-cover w-full h-full " }, // Col 2, Row 1
@@ -152,7 +152,7 @@ const DynamicCollage = ({ collageType = "collage1" }) => {
 
   if (!currentCollage) {
     return (
-      <div className="w-screen h-screen flex items-center justify-center text-red-500 bg-[#101213]">
+      <div className="w-full h-screen flex items-center justify-center text-red-500 bg-[#101213]">
         Collage type not found
       </div>
     );
