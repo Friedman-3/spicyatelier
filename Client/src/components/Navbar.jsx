@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import chileVainillaImage from '../assets/images/Content/ChileVainilla.png';
+import SpicyBlancoImage from '../assets/images/Content/SpicyBlanco.png';
 
 const Navbar = () => {
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
+    <header className="fixed top-5 left-0 w-full z-50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20 py-6">
           {/* Logo izquierdo */}
           <div className="flex justify-start">
             <Link to="/" className="block">
-              <img src={chileVainillaImage} alt="Spicy Atelier Logo" className="h-20" />
+              <img src={SpicyBlancoImage} alt="Spicy Atelier Logo" className="h-20" />
             </Link>
           </div>
 
