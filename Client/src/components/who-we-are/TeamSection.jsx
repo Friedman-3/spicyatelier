@@ -4,7 +4,7 @@ import fernandaImage from '../../assets/images/Content/Fernanda.png';
 
 const TeamMemberCard = ({ name, role, isCEO = false, image }) => (
   <div className="text-center">
-    <div className={`bg-gray-200 mx-auto ${isCEO ? 'w-48 h-48' : 'w-40 h-56'} mb-4 flex items-center justify-center overflow-hidden rounded-lg`}>
+    <div className={`bg-gray-200 mx-auto ${isCEO ? 'w-74 h-88' : 'w-44 h-64'} mb-4 flex items-center justify-center overflow-hidden rounded-lg`}>
       {image ? (
         <img 
           src={image} 
@@ -29,9 +29,9 @@ const TeamSection = () => {
           
           {/* Left Column: CEOs */}
           <div className="flex justify-around items-start">
-            <TeamMemberCard 
-              name="FERNANDA ROMANI" 
-              role="CEO & Co-Founder" 
+            <TeamMemberCard
+              name="FERNANDA ROMANI"
+              role="CEO & Co-Founder"
               isCEO={true} 
               image={fernandaImage}
             />

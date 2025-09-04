@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutUsImage from '../../assets/images/Content/CreativeCollaborationHub.webp';
+import alyFernandaImage from '../../assets/images/Content/Aly&Fernanda.JPG';
 
 const AboutSection = () => {
   return (
@@ -21,9 +21,13 @@ const AboutSection = () => {
         </div>
 
         {/* Right Column: Only Image */}
-        <div>
-          <div className="bg-gray-200 w-full h-130 mb-8 flex items-center justify-center">
-            <img src={aboutUsImage} alt="About Us" />
+        <div className="flex justify-center items-center">
+          <div className="bg-gray-200 w-full max-w-md h-auto mb-8 flex items-center justify-center rounded-xl shadow-lg">
+            <img
+              src={alyFernandaImage}
+              alt="Aly y Fernanda"
+              className="w-full h-auto object-cover rounded-xl"
+            />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../assets/images/Content/ChiliPepperElegance.webp';
+import heroImage from '../../assets/images/Content/InicioWhoWeAre.JPG'; // nueva imagen
 
 const HeroSection = () => {
   return (
@@ -25,7 +25,7 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
           backgroundImage: `url(${heroImage})`,
-          filter: 'brightness(75%) saturate(01.15)'
+          filter: 'brightness(75%) saturate(1.15)'
         }}
       />
 
@@ -33,7 +33,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 mix-blend-multiply"
         style={{ 
-          backgroundColor: 'rgba(165, 105, 125, 0.52)' // Vino rosado un poquito más colorido
+          backgroundColor: 'rgba(165, 105, 125, 0.52)'
         }}
       ></div>
 
@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 mix-blend-soft-light"
         style={{ 
-          backgroundColor: 'rgba(212, 145, 165, 0.4)' // Rosado medio vivo un poco más presente
+          backgroundColor: 'rgba(212, 145, 165, 0.4)'
         }}
       ></div>
 

@@ -37,7 +37,7 @@ const Footer = () => {
         <motion.div variants={textVariants} className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif italic">
             El toque picante que tu marca necesita <br /> está a un mensaje de distancia.
-            <img src={chileVainillaImage} alt="Chile" className="inline-block h-15 w-auto ml-2 align-middle" />
+            <img src={chileVainillaImage} alt="Chile" className="inline-block h-10 w-auto ml-2 align-middle" />
           </h2>
         </motion.div>
 
