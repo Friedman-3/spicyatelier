@@ -28,7 +28,7 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           
           {/* Left Column: CEOs */}
-          <div className="flex justify-around items-start">
+          <div className="flex justify-between items-start gap-16 px-8">
             <TeamMemberCard
               name="FERNANDA ROMANI"
               role="CEO & Co-Founder"
