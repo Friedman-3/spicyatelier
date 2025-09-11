@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import SpicyBlancoImage from "../assets/images/Content/SpicyBlanco.png";
+import SpicyBlancoImage from "../assets/images/Content/LogoSpicyNavBar.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,17 +26,20 @@ const Navbar = () => {
 
   const isWhoWeAre = location.pathname === "/who-we-are";
 
+  const gradientStyle = {
+    background: isWhoWeAre && !scrolled 
+      ? 'transparent' 
+      : 'linear-gradient(to bottom, rgba(100, 17, 38, 0.65) 0%, rgba(100, 17, 38, 0.5) 20%, rgba(100, 17, 38, 0.35) 40%, rgba(100, 17, 38, 0.22) 60%, rgba(100, 17, 38, 0.12) 75%, rgba(100, 17, 38, 0.05) 90%, transparent 100%)',
+    height: '160px'
+  };
+
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${
-        isWhoWeAre
-          ? scrolled
-            ? "bg-[#641126]/80 backdrop-blur-sm"
-            : "bg-transparent"
-          : "bg-[#641126]/80 backdrop-blur-sm"
-      }`}
+    <div
+      className="fixed top-0 left-0 w-full z-50 transition-all duration-700 pointer-events-none"
+      style={gradientStyle}
     >
-      <div className="container mx-auto px-6">
+      {/* Contenido del navbar con pointer-events habilitado */}
+      <div className="container mx-auto px-6 pointer-events-auto">
         <div className="flex items-center justify-between h-20 py-6">
           {/* Logo izquierdo */}
           <div className="flex justify-start">
@@ -71,7 +74,7 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
