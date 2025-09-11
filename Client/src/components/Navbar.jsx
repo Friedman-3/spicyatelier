@@ -55,7 +55,7 @@ const Navbar = () => {
           {/* Navegación derecha */}
           <nav className="flex justify-end">
             <ul className="flex items-center space-x-12">
-              {["Home", "Works", "Who We Are", "Services"].map((item, idx) => (
+              {["Home", "Works", "Who We Are", "Services", "Contact"].map((item, idx) => (
                 <li key={idx}>
                   <Link
                     to={

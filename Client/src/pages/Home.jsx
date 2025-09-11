@@ -1,6 +1,6 @@
 import React from "react";
 import ClientsSection from "../components/home/ClientsSection";
-import FinalVideoSection from "../components/home/FinalVideoSection";
+import VideoHero from "../components/home/VideoHero";
 import HeroSection from "../components/home/HeroSection";
 import IntroSection from "../components/home/IntroSection";
 import ServicesSection from "../components/home/ServicesSection";
@@ -14,7 +14,7 @@ const Home = () => {
       <ServicesSection />
       <WorksSection />
       <ClientsSection />
-      <FinalVideoSection />
+      <VideoHero />
     </div>
   );
 };
