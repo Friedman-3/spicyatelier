@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import introVideo from '../../assets/images/Content/IntroSectionVideo.mp4';
 
 const IntroSection = () => {
   const videoRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const video = videoRef.current;
@@ -45,6 +47,11 @@ const IntroSection = () => {
     };
   }, []);
 
+  const handleContactClick = () => {
+    navigate('/contact');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="bg-[#F5F1E9] py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -75,8 +82,12 @@ const IntroSection = () => {
 
         {/* Button below columns */}
         <div className="text-center mt-20">
-          <button className="bg-[#641126] text-white font-bold uppercase tracking-wider py-4 px-12 hover:bg-opacity-90 transition-colors duration-300">
-            HABLEMOS
+          <button 
+            onClick={handleContactClick}
+            className="bg-[#641126] text-white font-bold uppercase tracking-wider py-4 px-12 transition-all duration-300 cursor-pointer relative overflow-hidden group"
+          >
+            <span className="relative z-10">HABLEMOS</span>
+            <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
           </button>
         </div>
       </div>

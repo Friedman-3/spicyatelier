@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import heroVideo from '../../assets/images/Content/HeroSectionVideo.mp4';
-import posterImg from '../../assets/images/Content/ServiceHead.webp';
 
 const VideoPlayer = () => {
   const videoRef = useRef(null);
@@ -42,7 +41,6 @@ const VideoPlayer = () => {
         autoPlay
         loop
         preload="auto"
-        poster={posterImg}
       >
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.

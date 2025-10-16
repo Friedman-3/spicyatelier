@@ -1,17 +1,14 @@
-import BrandIdentity from '../components/Services/BrandIdentity';
-import ContentCreation from '../components/Services/ContentCreation';
-import Reels from '../components/Services/Reels';
-import Servicess from '../components/Services/Servicess';
-import SocialMediaStrategy from '../components/Services/SocialMediaStrategy';
+import HeroServices from '../components/Services/HeroServices';
+import ServicesCTA from '../components/Services/ServicesCTA';
+import ServicesDescription from '../components/Services/ServicesDescription';
+
 
 const Services = () => {
   return (
     <div>
-      <Servicess />
-      <ContentCreation />
-      <SocialMediaStrategy />
-      <BrandIdentity />
-      <Reels />
+      <HeroServices />
+      <ServicesCTA />
+      <ServicesDescription />
     </div>
   );
 };
