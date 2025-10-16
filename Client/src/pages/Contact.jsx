@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import HeroContact from '../assets/images/Content/HeroContact.jpg';
-import FraseContact from '../assets/images/Content/FraseFormularioContact.jpg';
+import FraseContact from '../assets/images/Content/FraseFormularioContact.png';
 import RedesContact from '../assets/images/Content/FraseRedesContact.jpg';
 
 const ContactPage = () => {
